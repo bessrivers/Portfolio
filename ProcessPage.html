@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+	<script defer src="include/fontawesome-free-6.5.2-web/js/all.js"></script>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description"
+		content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/arz4bbk.css">
+	<link rel="stylesheet" href="https://use.typekit.net/arz4bbk.css">
+
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+	<link rel="stylesheet" href="one-page/css/et-line.css">
+
+	<!-- One Page Module Specific Stylesheet -->
+	<link rel="stylesheet" href="one-page/onepage.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Designer - One Page | Canvas</title>
+
+	<style>
+		:root {
+			--cnvs-themecolor: #54CE7F;
+		}
+
+		body.stretched #header.full-header .container {
+			padding-right: 0px;
+		}
+
+		.slider-element {
+			background-image: linear-gradient(to right, #FFF 20%, rgba(108, 99, 255, .2) 100%);
+			background-position: right top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 30px 0;
+		}
+
+		.top-title {
+			display: block;
+			position: relative;
+			padding-left: 60px;
+			margin-bottom: 10px;
+			font-size: 18px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: var(--cnvs-themecolor);
+		}
+
+		.top-title::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 50px;
+			height: 2px;
+			margin-top: -1px;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+
+		.slider-element p {
+			font-size: 16px;
+			line-height: 1.75;
+			font-weight: 400;
+			color: #999;
+		}
+
+		.social-icons {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 0 20px;
+			height: 100vh;
+			background-color: #FFF;
+			z-index: 5;
+		}
+
+		@media (max-width: 991.98px) {
+			.social-icons {
+				position: relative;
+				padding: 0 20px;
+				height: auto;
+				width: 100%;
+				background-color: transparent;
+			}
+
+			.social-icons .separator {
+				display: none;
+			}
+		}
+
+		.social-icons .social-icon {
+			position: relative;
+			margin: 4px 2px;
+			color: rgba(0, 0, 0, 0.4);
+		}
+
+		.social-icons .separator {
+			width: 2px;
+			height: 60px;
+			background-color: rgba(0, 0, 0, 0.06);
+			margin: 10px 0;
+		}
+
+		.form-group {
+			position: relative;
+			padding: 10px 20px;
+			border-radius: 2px;
+			background-color: #FFF;
+		}
+
+		#widget-subscribe-form-email-error {
+			text-indent: -9999px;
+			height: 0;
+			margin: 0 !important;
+		}
+
+		#widget-subscribe-form-email-error {
+			display: block !important;
+		}
+
+		.form-group input+#widget-subscribe-form-email-error::after {
+			content: "";
+			font-family: 'bootstrap-icons';
+			position: absolute;
+			top: 50%;
+			right: 5%;
+			font-size: 24px;
+			transform: translateY(-50%);
+			text-indent: 0;
+			cursor: default;
+			color: red;
+		}
+
+		.form-group input.error+#widget-subscribe-form-email-error::after {
+			content: "\F333";
+			color: red;
+		}
+
+		.form-control.valid+#widget-subscribe-form-email-error::after {
+			content: "\F26B";
+			color: green;
+		}
+
+		.form-group input:not(:focus)+#widget-subscribe-form-email-error::after {
+			content: none;
+		}
+
+		.form-group label {
+			font-size: 13px;
+			font-weight: 500;
+			text-transform: none;
+			letter-spacing: 0;
+			margin-bottom: 0;
+		}
+
+		.form-group input {
+			position: relative;
+			background-color: transparent;
+			border: 0;
+			padding: 0;
+			font-size: 18px;
+			font-weight: 600;
+		}
+
+		.form-group input:active,
+		.form-group input:focus {
+			border-color: transparent;
+			background-color: transparent;
+		}
+	</style>
+
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" data-sticky-shrink="false">
+
+			<div id="header-wrap">
+				<div class="container-fluid mynavbar">
+					<div class="header-row ">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="index.html">
+								<img class="logo-default" src="images/myicons/RemodelingLogo.png" alt="Statewide Logo">
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+							<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250"
+								data-offset="65">
+								<li class="menu-item current">
+									<a href="#" class="menu-link mynavlinks " data-href="#wrapper">
+										<div>Services</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link mynavlinks" data-href="#section-about">
+										<div>About</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link mynavlinks" data-href="#section-works">
+										<div>Contact</div>
+									</a>
+								</li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+
+		<!-- Go To Top
+	============================================= -->
+
+
+		<!-- JavaScripts
+	============================================= -->
+		<script src="js/plugins.min.js"></script>
+		<script src="js/functions.bundle.js"></script>
+
+
+		<!-- Document Wrapper
+	============================================= -->
+		<div>
+
+			<!-- Hero Section
+		============================================= -->
+			<section id="slider" class="bg-img3">
+
+				<div class="container">
+					<div class="mybasicrow">
+						<div class="col-md-5">
+							<h1 class="display-3 fw-bold color-mywhite">Our Process </h1>
+							<p class="color-mywhite above-btn">Build confidence in our crew, as we work to build your
+								dream remodel. We work with a consistent process, so you can
+								always be prepared for what the step is next.</p>
+							<a href="#" class="solid-btn">Get a Free Quote!</a>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<!-- Content
+		============================================= -->
+
+		</div><!-- #wrapper end -->
+
+		<!-- Go To Top
+	============================================= -->
+
+		<!-- JavaScripts
+	============================================= -->
+		<script src="js/plugins.min.js"></script>
+		<script src="js/functions.bundle.js"></script>
+		<div class="container-fluid process-block">
+			<div>
+				<h2 class="color-mywhite text-center process-row2 fw-medium">Our Process</h2>
+			</div>
+			<div class="container">
+				<div class="row individual-steps align-items-md-center">
+					<!-- Image -->
+					<img src="images/myimages/step1.png" alt="..." class="col-md-6">
+
+					<!-- Content -->
+					<div class="col-md-6 px-lg-5">
+						<h3 class="h2 mb-4 color-mywhite fw-semibold">1. Schedule</h3>
+						<p class="lead fw-normal color-mywhite">Schedule an appointment at your convenience. We
+							guarantee a same-day
+							or next-day in-home estimates with a licensed and
+							insured design consultant.</p>
+					</div>
+				</div>
+
+				<div class="clear mt-lg-6"></div>
+
+				<div class="row individual-steps flex-row-reverse align-items-md-center mt-5">
+					<!-- Image -->
+					<img src="images/myimages/step2.png" alt="..." class="col-md-6">
+
+					<!-- Content -->
+					<div class="col-md-6 px-lg-5">
+						<h3 class="h2 color-mywhite mb-4 fw-semibold">2. Consultation</h3>
+						<p class="lead color-mywhite fw-normal">Our design consultant will bring samples to your home,
+							take
+							measurements, and walk you through the remodeling process
+							from start to finish.</p>
+					</div>
+				</div>
+
+				<div class="clear mt-lg-6"></div>
+
+				<div class="row individual-steps align-items-md-center mt-5">
+					<!-- Image -->
+					<img src="images/myimages/step3.png" alt="..." class="col-md-6">
+
+					<!-- Content -->
+					<div class="col-md-6 px-lg-5">
+						<h3 class="h2 color-mywhite mb-4 fw-semibold">3. Installation</h3>
+						<p class="lead color-mywhite fw-normal">Our trained & certified installers will be transparent
+							about
+							scheduling your installation and will arrive on time. Plus,
+							we always provide either a limited lifetime warranty or true lifetime warranty depending on
+							your product.</p>
+					</div>
+				</div>
+				<div class="clear mt-lg-6"></div>
+
+				<div class="row individual-steps flex-row-reverse align-items-md-center mt-5">
+					<!-- Image -->
+					<img src="images/myimages/step4.png" alt="..." class="col-md-6">
+
+					<!-- Content -->
+					<div class="col-md-6 px-lg-5">
+						<h3 class="h2 color-mywhite mb-4 fw-semibold">4. Satisfaction</h3>
+						<p class="lead color-mywhite fw-normal">This is the feeling you’ll get from your home remodeling
+							project. We
+							also have customer service technicians available
+							daily if you experience any issues throughout the process.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="container-fluid text-center start-row">
+			<h2 class="color-myblue">Start Your Project!</h2>
+			<p class=" above-btn color-myblue">Why wait to start the process of making your dream home a reality, when
+				you could start today?</p>
+			<a href="#" class="card-btn" style="margin-top: 20px;">Learn More</a>
+
+		</div>
+
+
+		<!-- Footer
+					============================================= -->
+		<div class="row myfooter container-fluid">
+
+			<div class="col-lg-6 footer-blurb-space">
+				<img src="images/myicons/RemodelingLogoFooter.png" alt="Canvas Logo">
+				<p class="color-mywhite above-btn footer-weight">Whether you need a new kitchen, bath,
+					or
+					replacement
+					windows; you can count
+					on us to provide you with the same top-rated
+					service that we’ve provided to more than 80,000 customers since 1994.</p>
+
+				<a href="#" class="card-btn">Learn More!</a>
+
+			</div>
+			<div class="col-lg-2 col-space-footer">
+				<p class="footer-title color-mywhite">Services</p>
+				<ul class="footer-lists color-mywhite">
+					<li><a href="">Closets</a></li>
+					<li><a href="">Windows</a></li>
+					<li><a href="">Cabinets</a></li>
+					<li><a href="">Doors</a></li>
+					<li><a href="">Floor Coatings</a></li>
+					<li><a href="">Bathrooms </a></li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-space-footer">
+				<p class="footer-title color-mywhite">About</p>
+				<ul class="footer-lists color-mywhite">
+					<li><a href="">Overview</a></li>
+					<li><a href="">Locations</a></li>
+					<li><a href="">Financing</a></li>
+					<li><a href="">Warranties</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">News</a></li>
+					<li><a href="">Reviews</a></li>
+					<li><a href="">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-2">
+				<p class="footer-title color-mywhite">Contact</p>
+				<ul class="footer-lists color-mywhite">
+					<li class="contact-space"><span class="contact-title">Headquarters</span><br>
+						2450 Esters Blvd.<br>
+						Suite 200<br>
+						DFW Airport, TX 75261</li>
+					<li class="contact-space">(469) 708-3457</li>
+					<li class="contact-space"><span class="contact-title">Mailing Address</span><br>
+						PO Box 2287<br>
+						Grapevine, Texas</li>
+				</ul>
+			</div>
+		</div><!-- #footer end -->
+		<!-- Copyrights
+						============================================= -->
+		<div class="row container-fluid copy-right">
+			<div class="col-sm-12 col-md-6">
+				<p class="color-mywhite">© Copyright 2024 All Rights Reserved</p>
+			</div>
+			<div class="col-sm-12 col-md-6 footer-icons color-mygreen">
+				<i class="fa-brands fa-houzz fa-2x"></i>
+				<i class="fa-brands fa-linkedin fa-2x"></i>
+				<i class="fa-brands fa-square-facebook fa-2x"></i>
+				<i class="fa-brands fa-square-pinterest fa-2x"></i>
+				<i class="fa-brands fa-square-x-twitter fa-2x"></i>
+				<i class="fa-brands fa-youtube fa-2x"></i>
+			</div>
+
+
+		</div><!-- #copyrights end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+				============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+				============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	<!-- Parallax Script
+				============================================= -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+	<script>!SEMICOLON.Mobile.any() && skrollr.init({ forceHeight: false });</script>
+
+	<script>
+		jQuery(document).ready(function () {
+			// Ticket Price Changed Script
+			var elementEarlyBird = jQuery("#early-bird-person"),
+				element1Day = jQuery("#1-day-pricing-person"),
+				element2Day = jQuery("#2-day-pricing-person"),
+				elementFull = jQuery("#full-pricing-person");
+
+			elementEarlyBird.on('change', function () {
+				pricingEarlyBird = jQuery(this).prop('value');
+				jQuery('.early-bird-pricing').html('$' + (pricingEarlyBird * 39));
+			});
+
+			element1Day.on('change', function () {
+				pricing1day = jQuery(this).prop('value');
+				jQuery('.1-day-pricing').html('$' + (pricing1day * 29));
+			});
+
+			element2Day.on('change', function () {
+				pricing2Day = jQuery(this).prop('value');
+				jQuery('.2-day-pricing').html('$' + (pricing2Day * 49));
+			});
+
+			elementFull.on('change', function () {
+				pricingFull = jQuery(this).prop('value');
+				jQuery('.full-pricing').html('$' + (pricingFull * 69));
+			});
+		});
+	</script>
+</body>
+
+</html>
