@@ -1,0 +1,615 @@
+<!DOCTYPE html>
+<html dir="ltr" lang="en-US">
+
+<head>
+
+	<script defer src="include/fontawesome-free-6.5.2-web/js/all.js"></script>
+	<meta http-equiv="content-type" content="text/html; charset=utf-8">
+	<meta http-equiv="x-ua-compatible" content="IE=edge">
+	<meta name="author" content="SemiColonWeb">
+	<meta name="description"
+		content="Get Canvas to build powerful websites easily with the Highly Customizable &amp; Best Selling Bootstrap Template, today.">
+
+	<!-- Font Imports -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:wght@300;400;600;700&family=Roboto:wght@300;400;500;700&family=Playfair+Display:wght@400;700&display=swap"
+		rel="stylesheet">
+	<link rel="stylesheet" href="https://use.typekit.net/arz4bbk.css">
+	<link rel="stylesheet" href="https://use.typekit.net/arz4bbk.css">
+
+
+	<!-- Core Style -->
+	<link rel="stylesheet" href="style.css">
+
+	<!-- Font Icons -->
+	<link rel="stylesheet" href="css/font-icons.css">
+	<link rel="stylesheet" href="one-page/css/et-line.css">
+
+	<!-- One Page Module Specific Stylesheet -->
+	<link rel="stylesheet" href="one-page/onepage.css">
+
+	<!-- Custom CSS -->
+	<link rel="stylesheet" href="css/custom.css">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+
+	<!-- Document Title
+	============================================= -->
+	<title>Designer - One Page | Canvas</title>
+
+	<style>
+		:root {
+			--cnvs-themecolor: #54CE7F;
+		}
+
+		body.stretched #header.full-header .container {
+			padding-right: 0px;
+		}
+
+		.slider-element {
+			background-image: linear-gradient(to right, #FFF 20%, rgba(108, 99, 255, .2) 100%);
+			background-position: right top;
+			background-repeat: no-repeat;
+			background-size: cover;
+			padding: 30px 0;
+		}
+
+		.top-title {
+			display: block;
+			position: relative;
+			padding-left: 60px;
+			margin-bottom: 10px;
+			font-size: 18px;
+			font-weight: 600;
+			text-transform: uppercase;
+			letter-spacing: 1px;
+			color: var(--cnvs-themecolor);
+		}
+
+		.top-title::after {
+			content: '';
+			position: absolute;
+			top: 50%;
+			left: 0;
+			width: 50px;
+			height: 2px;
+			margin-top: -1px;
+			background-color: rgba(0, 0, 0, 0.7);
+		}
+
+		.slider-element p {
+			font-size: 16px;
+			line-height: 1.75;
+			font-weight: 400;
+			color: #999;
+		}
+
+		.social-icons {
+			position: absolute;
+			top: 0;
+			right: 0;
+			padding: 0 20px;
+			height: 100vh;
+			background-color: #FFF;
+			z-index: 5;
+		}
+
+		@media (max-width: 991.98px) {
+			.social-icons {
+				position: relative;
+				padding: 0 20px;
+				height: auto;
+				width: 100%;
+				background-color: transparent;
+			}
+
+			.social-icons .separator {
+				display: none;
+			}
+		}
+
+		.social-icons .social-icon {
+			position: relative;
+			margin: 4px 2px;
+			color: rgba(0, 0, 0, 0.4);
+		}
+
+		.social-icons .separator {
+			width: 2px;
+			height: 60px;
+			background-color: rgba(0, 0, 0, 0.06);
+			margin: 10px 0;
+		}
+
+		.form-group {
+			position: relative;
+			padding: 10px 20px;
+			border-radius: 2px;
+			background-color: #FFF;
+		}
+
+		#widget-subscribe-form-email-error {
+			text-indent: -9999px;
+			height: 0;
+			margin: 0 !important;
+		}
+
+		#widget-subscribe-form-email-error {
+			display: block !important;
+		}
+
+		.form-group input+#widget-subscribe-form-email-error::after {
+			content: "";
+			font-family: 'bootstrap-icons';
+			position: absolute;
+			top: 50%;
+			right: 5%;
+			font-size: 24px;
+			transform: translateY(-50%);
+			text-indent: 0;
+			cursor: default;
+			color: red;
+		}
+
+		.form-group input.error+#widget-subscribe-form-email-error::after {
+			content: "\F333";
+			color: red;
+		}
+
+		.form-control.valid+#widget-subscribe-form-email-error::after {
+			content: "\F26B";
+			color: green;
+		}
+
+		.form-group input:not(:focus)+#widget-subscribe-form-email-error::after {
+			content: none;
+		}
+
+		.form-group label {
+			font-size: 13px;
+			font-weight: 500;
+			text-transform: none;
+			letter-spacing: 0;
+			margin-bottom: 0;
+		}
+
+		.form-group input {
+			position: relative;
+			background-color: transparent;
+			border: 0;
+			padding: 0;
+			font-size: 18px;
+			font-weight: 600;
+		}
+
+		.form-group input:active,
+		.form-group input:focus {
+			border-color: transparent;
+			background-color: transparent;
+		}
+	</style>
+
+
+</head>
+
+<body class="stretched">
+
+	<!-- Document Wrapper
+	============================================= -->
+	<div id="wrapper">
+
+		<!-- Header
+		============================================= -->
+		<header id="header" data-sticky-shrink="false">
+
+			<div id="header-wrap">
+				<div class="container-fluid mynavbar">
+					<div class="header-row ">
+
+						<!-- Logo
+						============================================= -->
+						<div id="logo">
+							<a href="index.html">
+								<img class="logo-default" src="images/myicons/RemodelingLogo.png" alt="Statewide Logo">
+							</a>
+						</div><!-- #logo end -->
+
+						<div class="primary-menu-trigger">
+							<button class="cnvs-hamburger" type="button" title="Open Mobile Menu">
+								<span class="cnvs-hamburger-box"><span class="cnvs-hamburger-inner"></span></span>
+							</button>
+						</div>
+
+						<!-- Primary Navigation
+						============================================= -->
+						<nav class="primary-menu">
+
+							<ul class="one-page-menu menu-container" data-easing="easeInOutExpo" data-speed="1250"
+								data-offset="65">
+								<li class="menu-item current">
+									<a href="#" class="menu-link mynavlinks " data-href="#wrapper">
+										<div>Services</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link mynavlinks" data-href="#section-about">
+										<div>About</div>
+									</a>
+								</li>
+								<li class="menu-item">
+									<a href="#" class="menu-link mynavlinks" data-href="#section-works">
+										<div>Contact</div>
+									</a>
+								</li>
+							</ul>
+
+						</nav><!-- #primary-menu end -->
+
+					</div>
+				</div>
+			</div>
+			<div class="header-wrap-clone"></div>
+
+		</header><!-- #header end -->
+
+		<!-- Slider
+		============================================= -->
+
+		<!-- Go To Top
+	============================================= -->
+
+		<!-- JavaScripts
+	============================================= -->
+		<script src="js/plugins.min.js"></script>
+		<script src="js/functions.bundle.js"></script>
+
+
+		<!-- Document Wrapper
+	============================================= -->
+		<div>
+
+			<!-- Hero Section
+		============================================= -->
+			<section id="slider" class="bg-img1">
+
+				<div class="container">
+					<div class="mybasicrow">
+						<div class="col-md-5">
+							<h1 class="display-3 fw-bold color-mywhite">Your Residence Reimagined</h1>
+							<p class="color-mywhite above-btn">For all your indoor and outdoor projects, you can rely on
+								our
+								award-winning experts! We do more than home remodeling —
+								we build lives one step and one project at a time.</p>
+							<a href="#" class="solid-btn">Get a Free Quote!</a>
+						</div>
+					</div>
+				</div>
+
+			</section>
+
+			<!-- Content
+		============================================= -->
+			<section id="content">
+				<div class="content-wrap py-0">
+
+
+
+				</div>
+			</section><!-- #content end -->
+
+
+		</div><!-- #wrapper end -->
+
+		<!-- Go To Top
+	============================================= -->
+
+		<!-- JavaScripts
+	============================================= -->
+		<script src="js/plugins.min.js"></script>
+		<script src="js/functions.bundle.js"></script>
+
+		<div class="stats-row container-fluid ">
+
+			<div class="row col-mb-50">
+				<div class="col-sm-6 col-lg-4 text-center" data-animate="bounceIn">
+					<i class="fa-solid fa-person-chalkboard fa-3x color-mygreen"></i>
+					<div class="stats-num color-mywhite regular counter counter-lined"><span data-from="0" data-to="25"
+							data-refresh-interval="50" data-speed="2000"></span>+</div>
+					<p class="bold color-mygreen">Years of Experiene</p>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 text-center " data-animate="bounceIn" data-delay="200">
+					<i class="fa-regular fa-face-smile-beam fa-3x color-mygreen"></i>
+					<div class="stats-num color-mywhite regular counter counter-lined"><span data-from="50000"
+							data-to="80000" data-refresh-interval="100" data-speed="2500"></span>+</div>
+					<p class="bold color-mygreen">Satisfied Customers</p>
+				</div>
+
+				<div class="col-sm-6 col-lg-4 text-center " data-animate="bounceIn" data-delay="400">
+					<i class="fa-regular fa-thumbs-up fa-3x color-mygreen"></i>
+					<div class="stats-num color-mywhite regular counter counter-lined"><span data-from="73000"
+							data-to="83500" data-refresh-interval="25" data-speed="2500"></span>+</div>
+					<p class="bold color-mygreen">Completed Projects</p>
+				</div>
+			</div>
+
+		</div>
+		<div>
+			<h2 class="color-myblue text-center services-row fw-medium">Our Services</h2>
+		</div>
+
+		<div id="related-portfolio" class="owl-carousel portfolio-carousel carousel-widget card-row" data-margin="20"
+			data-pagi="false" data-autoplay="7000" data-items-xs="1" data-items-sm="2" data-items-md="3"
+			data-items-lg="4">
+
+			<div class="oc-item">
+				<div class="portfolio-item">
+					<div class="portfolio-image card-top">
+						<a href="#">
+							<img src="images/myimages/pexels-max-vakhtbovycn-7166555.png" alt="Open Imagination">
+						</a>
+					</div>
+					<div class="portfolio-desc card-info text-center">
+						<h3 class="bold color-mywhite">Closets</h3>
+						<p class="above-btn color-mywhite">Maximize your space and remove clutter with our shelving
+							units.
+						</p>
+						<a class="card-btn">Explore Options</a>
+					</div>
+				</div>
+			</div>
+			<div class="oc-item">
+				<div class="portfolio-item">
+					<div class="portfolio-image card-top">
+						<a href="#">
+							<img src="images/myimages/windows.png" alt="Locked Steel Gate">
+						</a>
+					</div>
+					<div class="portfolio-desc card-info text-center">
+						<h3 class="bold color-mywhite">Windows</h3>
+						<p class="above-btn color-mywhite">Customize your home with innovative window styles.</p>
+						<a class="card-btn">Explore Options</a>
+					</div>
+				</div>
+			</div>
+			<div class="oc-item">
+				<div class="portfolio-item">
+					<div class="portfolio-image card-top">
+						<a href="#">
+							<img src="images/myimages/kitchen.png" alt="Mac Sunglasses">
+						</a>
+					</div>
+					<div class="portfolio-desc card-info text-center">
+						<h3 class="bold color-mywhite">Cabinets</h3>
+						<p class="above-btn color-mywhite">Revive the look of your kitchen with new cabinets.</p>
+						<a class="card-btn">Explore Options</a>
+					</div>
+				</div>
+			</div>
+			<div class="oc-item">
+				<div class="portfolio-item">
+					<div class="portfolio-image card-top">
+						<a href="#">
+							<img src="images/myimages/frontdoor.png" alt="Morning Dew">
+						</a>
+					</div>
+					<div class="portfolio-desc card-info text-center">
+						<h3 class="bold color-mywhite">Doors</h3>
+						<p class="above-btn color-mywhite">Increase curve appeal with a new custom front door.</p>
+						<a class="card-btn">Explore Options</a>
+					</div>
+				</div>
+			</div>
+			<div class="oc-item">
+				<div class="portfolio-item">
+					<div class="portfolio-image card-top">
+						<a href="#">
+							<img src="images/myimages/garage.png" alt="Console Activity">
+						</a>
+					</div>
+					<div class="portfolio-desc card-info text-center">
+						<h3 class="bold color-mywhite">Garages</h3>
+						<p class="above-btn color-mywhite">Customize and create garage solutions that fit like a
+							glove.</p>
+						<a class="card-btn">Explore Options</a>
+					</div>
+				</div>
+			</div>
+			<div class="oc-item">
+				<div class="portfolio-item">
+					<div class="portfolio-image card-top">
+						<a href="#">
+							<img src="images/myimages/bathtub.png" alt="Shake It!">
+						</a>
+					</div>
+					<div class="portfolio-desc card-info text-center">
+						<h3 class="bold color-mywhite">Bathrooms</h3>
+						<p class="above-btn color-mywhite">Upgrade your bathroom with a new, sleek shower or bath.</p>
+						<a class="card-btn">Explore Options</a>
+					</div>
+				</div>
+			</div>
+
+		</div><!-- .portfolio-carousel end -->
+		<div class="container-fluid text-center story-row">
+			<h2 class="color-mywhite">Our Story</h2>
+			<p class=" above-btn color-mywhite">Since 1994, Statewide Remodeling has met the call for
+				outstanding home services and customer care by providing a wide
+				variety of high-quality interior and exterior solutions. Whatever your project goals may be,
+				the Statewide team will
+				provide you with industry-leading products that sport the contemporary style and durability
+				you need to preserve your
+				home’s structural integrity and energy efficiency.</p>
+			<a href="#" class="solid-btn" style="margin-top: 20px;">Read More</a>
+
+		</div>
+
+		<div class="tab-pane show active" role="tabpanel" tabindex="0" id="tab-1">
+			<div class="row process-row1 col-mb-30 align-items-center">
+				<div class="col-lg-5 col-sm-6">
+					<img src="images/myimages/fancydrywall.png" alt="story-image">
+				</div>
+				<div class="col-lg-2 col-sm-0"></div>
+				<div class="col-lg-5 col-sm-6 process-col">
+					<h2 class="color-myblue process-info">Our Process</h2>
+					<div class="row steps-row">
+						<div class="col-2 color-mygreen icon-list">
+							<i class="fa-regular fa-calendar-check fa-3x"></i>
+						</div>
+						<div class="col-10">
+							<h3 class="color-myblue">Schedule</h3>
+						</div>
+					</div>
+					<div class="row steps-row">
+						<div class="col-2 color-mygreen icon-list">
+							<i class="fa-solid fa-house-circle-check fa-3x"></i>
+						</div>
+						<div class="col-10">
+							<h3 class="color-myblue">Consultation</h3>
+						</div>
+					</div>
+					<div class="row steps-row">
+						<div class="col-2 color-mygreen icon-list">
+							<i class="fa-solid fa-hammer fa-3x"></i>
+						</div>
+						<div class="col-10">
+							<h3 class="color-myblue">Installation</h3>
+						</div>
+					</div>
+					<div class="row steps-row">
+						<div class="col-2 color-mygreen icon-list">
+							<i class="fa-regular fa-face-smile-beam fa-3x"></i>
+						</div>
+						<div class="col-10">
+							<h3 class="color-myblue above-btn">Satisfaction</h3>
+						</div>
+					</div>
+					<div class="process-info">
+						<a href="#" class="solid-btn list-btn">Learn More</a>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<!-- Footer
+					============================================= -->
+		<div class="row myfooter container-fluid">
+
+			<div class="col-lg-6 footer-blurb-space">
+				<img src="images/myicons/RemodelingLogoFooter.png" alt="Canvas Logo">
+				<p class="color-mywhite above-btn footer-weight">Whether you need a new kitchen, bath,
+					or
+					replacement
+					windows; you can count
+					on us to provide you with the same top-rated
+					service that we’ve provided to more than 80,000 customers since 1994.</p>
+
+				<a href="#" class="card-btn">Learn More!</a>
+
+			</div>
+			<div class="col-lg-2 col-space-footer">
+				<p class="footer-title color-mywhite">Services</p>
+				<ul class="footer-lists color-mywhite">
+					<li><a href="">Closets</a></li>
+					<li><a href="">Windows</a></li>
+					<li><a href="">Cabinets</a></li>
+					<li><a href="">Doors</a></li>
+					<li><a href="">Floor Coatings</a></li>
+					<li><a href="">Bathrooms </a></li>
+				</ul>
+			</div>
+			<div class="col-lg-2 col-space-footer">
+				<p class="footer-title color-mywhite">About</p>
+				<ul class="footer-lists color-mywhite">
+					<li><a href="">Overview</a></li>
+					<li><a href="">Locations</a></li>
+					<li><a href="">Financing</a></li>
+					<li><a href="">Warranties</a></li>
+					<li><a href="">Careers</a></li>
+					<li><a href="">News</a></li>
+					<li><a href="">Reviews</a></li>
+					<li><a href="">Privacy Policy</a></li>
+				</ul>
+			</div>
+			<div class="col-lg-2">
+				<p class="footer-title color-mywhite">Contact</p>
+				<ul class="footer-lists color-mywhite">
+					<li class="contact-space"><span class="contact-title">Headquarters</span><br>
+						2450 Esters Blvd.<br>
+						Suite 200<br>
+						DFW Airport, TX 75261</li>
+					<li class="contact-space">(469) 708-3457</li>
+					<li class="contact-space"><span class="contact-title">Mailing Address</span><br>
+						PO Box 2287<br>
+						Grapevine, Texas</li>
+				</ul>
+			</div>
+		</div><!-- #footer end -->
+		<!-- Copyrights
+						============================================= -->
+		<div class="row container-fluid copy-right">
+			<div class="col-sm-12 col-md-6">
+				<p class="color-mywhite">© Copyright 2024 All Rights Reserved</p>
+			</div>
+			<div class="col-sm-12 col-md-6 footer-icons color-mygreen">
+				<i class="fa-brands fa-houzz fa-2x"></i>
+				<i class="fa-brands fa-linkedin fa-2x"></i>
+				<i class="fa-brands fa-square-facebook fa-2x"></i>
+				<i class="fa-brands fa-square-pinterest fa-2x"></i>
+				<i class="fa-brands fa-square-x-twitter fa-2x"></i>
+				<i class="fa-brands fa-youtube fa-2x"></i>
+			</div>
+
+
+		</div><!-- #copyrights end -->
+
+
+	</div><!-- #wrapper end -->
+
+	<!-- Go To Top
+				============================================= -->
+	<div id="gotoTop" class="uil uil-angle-up"></div>
+
+	<!-- JavaScripts
+				============================================= -->
+	<script src="js/plugins.min.js"></script>
+	<script src="js/functions.bundle.js"></script>
+
+	<!-- Parallax Script
+				============================================= -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/skrollr/0.6.30/skrollr.min.js"></script>
+	<script>!SEMICOLON.Mobile.any() && skrollr.init({ forceHeight: false });</script>
+
+	<script>
+		jQuery(document).ready(function () {
+			// Ticket Price Changed Script
+			var elementEarlyBird = jQuery("#early-bird-person"),
+				element1Day = jQuery("#1-day-pricing-person"),
+				element2Day = jQuery("#2-day-pricing-person"),
+				elementFull = jQuery("#full-pricing-person");
+
+			elementEarlyBird.on('change', function () {
+				pricingEarlyBird = jQuery(this).prop('value');
+				jQuery('.early-bird-pricing').html('$' + (pricingEarlyBird * 39));
+			});
+
+			element1Day.on('change', function () {
+				pricing1day = jQuery(this).prop('value');
+				jQuery('.1-day-pricing').html('$' + (pricing1day * 29));
+			});
+
+			element2Day.on('change', function () {
+				pricing2Day = jQuery(this).prop('value');
+				jQuery('.2-day-pricing').html('$' + (pricing2Day * 49));
+			});
+
+			elementFull.on('change', function () {
+				pricingFull = jQuery(this).prop('value');
+				jQuery('.full-pricing').html('$' + (pricingFull * 69));
+			});
+		});
+	</script>
+</body>
+
+</html>
